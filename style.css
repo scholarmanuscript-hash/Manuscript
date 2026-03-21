@@ -105,7 +105,7 @@ nav a:hover { color: var(--gold); }
 .legal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
 .legal-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border-top: 4px solid var(--navy); }
 .legal-card h4 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 20px; color: var(--navy); display: flex; align-items: center; gap: 10px; }
-.legal-card p {color: #475569;}
+.legal-card p {color: #475569; font-size: 15px;}
 
 /* Inquiry Section */
 .contact-section { padding: 90px 0; background: #fff;}
@@ -139,12 +139,23 @@ footer { background: var(--navy); padding: 60px 0 30px; border-top: 5px solid va
 .footer-links a { color: var(--white); text-decoration: underline; margin: 0 8px; transition: 0.3s; cursor: pointer; position: relative; z-index: 10;}
 .footer-links a:hover { color: var(--gold); }
 
-/* Mobile View Adjustments */
+/* ========================================================
+   MOBILE VIEW FIX (Cards ki width badhane aur zoom fix karne ke liye)
+   ======================================================== */
 @media (max-width: 768px) {
     .nav-box, .form-grid, .form-footer, .footer-bottom, .legal-grid { flex-direction: column; text-align: center; gap: 20px; }
     .hero-title { font-size: 38px; }
     .brand-section { flex-direction: row; justify-content: center;}
     .dual-select {grid-template-columns: 1fr;}
+    nav ul { flex-wrap: wrap; justify-content: center; }
+
+    /* Yeh cards ko mobile par ek line me layega aur bada dikhayega */
+    .service-grid { grid-template-columns: 1fr; gap: 25px; }
+    
+    /* Mobile ke hisaab se card aur font size adjust kiya gaya hai */
     .service-card { padding: 65px 25px 35px; }
-    nav ul { flex-wrap: wrap; justify-content: center; } 
+    .service-card .service-title { font-size: 26px; } 
+    .service-card .portfolio-icon { font-size: 55px; margin-bottom: 20px;} 
+    .service-card p { font-size: 17px; line-height: 1.5; } 
+    .service-card .badge { font-size: 12px; padding: 7px 15px; } 
 }
