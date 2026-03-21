@@ -1,12 +1,4 @@
-/* --- MOBILE SCREEN FIT FIX (Blank space hatane ke liye) --- */
-html, body {
-    width: 100%;
-    max-width: 100vw;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-/* ---------------------------------------------------------- */
+html, body { width: 100%; max-width: 100vw; overflow-x: hidden; margin: 0; padding: 0; }
 
 :root {
     --navy: #0a192f;
@@ -20,10 +12,10 @@ html, body {
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Inter', sans-serif; background-color: var(--light-bg); color: #1e293b; line-height: 1.6; }
-.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; width: 100%; }
 
 /* Header Styling */
-header { background: var(--navy); padding: 15px 0; border-bottom: 3px solid var(--gold); position: sticky; top: 0; z-index: 1000; }
+header { background: var(--navy); padding: 15px 0; border-bottom: 3px solid var(--gold); position: sticky; top: 0; z-index: 1000; width: 100%; }
 .nav-box { display: flex; justify-content: space-between; align-items: center; }
 .brand-section { display: flex; align-items: center; gap: 15px; text-decoration: none;}
 .brand-logo { height: 75px; width: auto; filter: drop-shadow(0 0 5px rgba(212,175,55,0.4)); border-radius: 4px; object-fit: contain; }
@@ -31,7 +23,6 @@ header { background: var(--navy); padding: 15px 0; border-bottom: 3px solid var(
 .brand-text h1 span, .brand-text h2 span { color: var(--gold); }
 .brand-text p { font-size: 9px; color: var(--slate); text-transform: uppercase; margin-top: 4px; letter-spacing: 1px;}
 
-/* Navigation */
 nav ul { display: flex; list-style: none; gap: 20px; align-items: center; }
 nav a { text-decoration: none; color: var(--white); font-size: 14px; font-weight: 500; transition: 0.3s; }
 nav a:hover { color: var(--gold); }
@@ -48,56 +39,14 @@ nav a:hover { color: var(--gold); }
 /* Services Grid */
 .services-section { padding: 90px 0; background: #fff; }
 .section-heading { text-align: center; font-family: 'Playfair Display', serif; font-size: 38px; margin-bottom: 60px; color: var(--navy); }
-.section-heading span { color: inherit; } 
 
 .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
 
-.service-card { 
-    padding: 75px 35px 40px; 
-    border: 1px solid #eee; 
-    border-radius: 15px; 
-    text-align: center; 
-    transition: 0.4s; 
-    position: relative; 
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+.service-card { padding: 75px 35px 40px; border: 1px solid #eee; border-radius: 15px; text-align: center; transition: 0.4s; position: relative; background: #fff; display: flex; flex-direction: column; align-items: center; }
 .service-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); border-top: 5px solid var(--gold); }
-
-.service-card .badge { 
-    position: absolute; 
-    top: 15px; 
-    right: 15px; 
-    background: var(--gold) !important; 
-    color: var(--navy) !important; 
-    padding: 6px 14px; 
-    font-size: 10px; 
-    border-radius: 4px; 
-    font-weight: 800; 
-    text-transform: uppercase;
-    border: 1px solid var(--gold);
-    z-index: 2; 
-}
-
-.service-card .service-title { 
-    font-family: 'Playfair Display', serif; 
-    font-size: 22px; 
-    color: var(--navy) !important; 
-    margin-top: 0; 
-    margin-bottom: 15px; 
-    font-weight: 700; 
-}
-
-.service-card .portfolio-icon { 
-    font-size: 45px; 
-    color: var(--rich-brown) !important; 
-    margin-top: 10px; 
-    margin-bottom: 25px; 
-    display: block;
-}
-
+.service-card .badge { position: absolute; top: 15px; right: 15px; background: var(--gold) !important; color: var(--navy) !important; padding: 6px 14px; font-size: 10px; border-radius: 4px; font-weight: 800; text-transform: uppercase; border: 1px solid var(--gold); z-index: 2; }
+.service-card .service-title { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--navy) !important; margin-top: 0; margin-bottom: 15px; font-weight: 700; }
+.service-card .portfolio-icon { font-size: 45px; color: var(--rich-brown) !important; margin-top: 10px; margin-bottom: 25px; display: block; }
 .service-card p { color: #555; line-height: 1.5; font-size: 15px; margin-top: auto;}
 
 /* Legal Overview Section */
@@ -105,7 +54,7 @@ nav a:hover { color: var(--gold); }
 .legal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
 .legal-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border-top: 4px solid var(--navy); }
 .legal-card h4 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 20px; color: var(--navy); display: flex; align-items: center; gap: 10px; }
-.legal-card p {color: #475569; font-size: 15px;}
+.legal-card p {color: #475569;}
 
 /* Inquiry Section */
 .contact-section { padding: 90px 0; background: #fff;}
@@ -114,7 +63,6 @@ nav a:hover { color: var(--gold); }
 .contact-header h3 { font-family: 'Playfair Display', serif; font-size: 36px; }
 .contact-header h3 span { color: var(--gold); }
 .contact-header p { color: var(--slate); margin-top: 10px;}
-
 .professional-form { padding: 50px; }
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 .input-group { margin-bottom: 20px; display: flex; flex-direction: column; }
@@ -125,7 +73,6 @@ input:focus, select:focus, textarea:focus { border-color: var(--gold); outline: 
 .form-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 30px; padding-top: 30px; border-top: 1px solid #eee; }
 .form-footer p {color: #64748b; font-size: 14px;}
 .form-mail-link { color: var(--navy); font-weight: 800; text-decoration: none; border-bottom: 2px solid var(--gold); transition: 0.3s; }
-.form-mail-link:hover {color: var(--gold);}
 .submit-premium { background: var(--navy); color: var(--gold); padding: 18px 40px; border: none; border-radius: 8px; font-weight: 800; text-transform: uppercase; cursor: pointer; transition: 0.4s; letter-spacing: 1px;}
 .submit-premium:hover { background: var(--gold); color: var(--navy); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(212,175,55,0.3); }
 
@@ -140,22 +87,31 @@ footer { background: var(--navy); padding: 60px 0 30px; border-top: 5px solid va
 .footer-links a:hover { color: var(--gold); }
 
 /* ========================================================
-   MOBILE VIEW FIX (Cards ki width badhane aur zoom fix karne ke liye)
+   STRICT MOBILE VIEW (Forces 1 column and scales text up)
    ======================================================== */
-@media (max-width: 768px) {
-    .nav-box, .form-grid, .form-footer, .footer-bottom, .legal-grid { flex-direction: column; text-align: center; gap: 20px; }
-    .hero-title { font-size: 38px; }
-    .brand-section { flex-direction: row; justify-content: center;}
-    .dual-select {grid-template-columns: 1fr;}
-    nav ul { flex-wrap: wrap; justify-content: center; }
+@media screen and (max-width: 992px) {
+    .nav-box, .form-grid, .form-footer, .footer-bottom, .legal-grid { flex-direction: column !important; text-align: center !important; gap: 20px !important; }
+    .hero-title { font-size: 40px !important; }
+    .brand-section { flex-direction: row !important; justify-content: center !important;}
+    .dual-select {grid-template-columns: 1fr !important;}
+    nav ul { flex-wrap: wrap !important; justify-content: center !important; }
 
-    /* Yeh cards ko mobile par ek line me layega aur bada dikhayega */
-    .service-grid { grid-template-columns: 1fr; gap: 25px; }
+    /* FORCING 1 COLUMN FOR PORTFOLIO ON MOBILE */
+    .service-grid { 
+        display: flex !important; 
+        flex-direction: column !important; 
+        gap: 30px !important; 
+        width: 100% !important;
+    }
     
-    /* Mobile ke hisaab se card aur font size adjust kiya gaya hai */
-    .service-card { padding: 65px 25px 35px; }
-    .service-card .service-title { font-size: 26px; } 
-    .service-card .portfolio-icon { font-size: 55px; margin-bottom: 20px;} 
-    .service-card p { font-size: 17px; line-height: 1.5; } 
-    .service-card .badge { font-size: 12px; padding: 7px 15px; } 
+    .service-card { 
+        width: 100% !important; 
+        padding: 60px 25px 35px !important; 
+    }
+    .service-card .service-title { font-size: 26px !important; } 
+    .service-card .portfolio-icon { font-size: 55px !important; margin-bottom: 20px !important;} 
+    .service-card p { font-size: 18px !important; line-height: 1.6 !important; } 
+    .service-card .badge { font-size: 12px !important; padding: 8px 16px !important; } 
+    
+    .professional-form { padding: 30px 20px !important; }
 }
