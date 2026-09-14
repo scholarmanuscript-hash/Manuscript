@@ -1,145 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>The Scholar's Manuscript | Global Academic Solutions</title>
+    
+    <meta name="theme-color" content="#0a192f">
+    <link rel="manifest" href="manifest.json">
 
-<title>The Scholar's Manuscript</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-
-<style>
-/* 🔐 LOGIN SCREEN */
-#lockScreen {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #0A0A0A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.lock-box {
-    background: #111;
-    padding: 40px;
-    border-radius: 15px;
-    text-align: center;
-    border: 1px solid #222;
-}
-
-.lock-box h2 {
-    color: #D4AF37;
-    margin-bottom: 20px;
-}
-
-.lock-box input {
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 15px;
-    background: #000;
-    border: 1px solid #222;
-    color: white;
-}
-
-.lock-box button {
-    padding: 10px 20px;
-    background: #D4AF37;
-    border: none;
-    cursor: pointer;
-}
-</style>
-
-<script>
-function checkPassword() {
-    var pass = document.getElementById("password").value;
-    if(pass === "12345") {
-        document.getElementById("lockScreen").style.display = "none";
-    } else {
-        alert("Wrong Password!");
-    }
-}
-</script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- 🔐 LOGIN SCREEN -->
-<div id="lockScreen">
-    <div class="lock-box">
-        <h2>Secure Access</h2>
-        <input type="password" id="password" placeholder="Enter Password">
-        <button onclick="checkPassword()">Enter</button>
-    </div>
-</div>
+    <header>
+        <div class="container nav-box">
+            <div class="brand-section">
+                <a href="index.html" class="brand-section-new">
+                    <div class="new-logo-badge">
+                        <svg viewBox="0 0 100 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="premiumGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FCEABB" />
+                                    <stop offset="40%" stop-color="#d4af37" />
+                                    <stop offset="100%" stop-color="#8B4513" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="47" fill="#0a192f" stroke="url(#premiumGold)" stroke-width="4"/>
+                            <circle cx="50" cy="50" r="39" fill="none" stroke="url(#premiumGold)" stroke-width="1.5" stroke-dasharray="5,4"/>
+                            <path d="M50 22 L65 48 L56 53 L56 75 L44 75 L44 53 L35 48 Z" fill="url(#premiumGold)"/>
+                            <path d="M50 28 L50 50" stroke="#0a192f" stroke-width="2"/>
+                            <circle cx="50" cy="53" r="2.5" fill="#0a192f"/>
+                        </svg>
+                    </div>
+                    <div class="brand-text-block">
+                        <h1>THE SCHOLAR'S <br><span style="color: var(--gold);">MANUSCRIPT</span></h1>
+                        <p>Refining the Science of Writing</p>
+                    </div>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#services">Expertise</a></li>
+                    <li><a href="#about">Profile</a></li>
+                    <li><a href="#contact" class="btn-gold">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<!-- ===== YOUR ORIGINAL WEBSITE (UNCHANGED) ===== -->
+    <section class="hero">
+        <div class="hero-content container">
+            <h2 class="hero-title">Elevating Research to <br><span>Global Standards.</span></h2>
+            <p class="hero-desc">Bespoke Academic Support for U.G., P.G., and Doctoral Candidates across Science, Commerce, and Humanities.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn-solid">Explore Solutions</a>
+                <a href="mailto:scholarmanuscript@gmail.com" class="btn-outline">Official Email</a>
+            </div>
+        </div>
+    </section>
 
-<header>
-    <div class="container nav-box">
-        <div class="brand-section">
-            <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 15px;">
-                <img src="logo.jpg" class="brand-logo">
-                <div class="brand-text">
-                    <h1>THE SCHOLAR'S <br><span>MANUSCRIPT</span></h1>
-                    <p>Refining the Science of Writing</p>
+    <section id="about-intro" class="about-intro-section">
+        <div class="container">
+            <div class="about-intro-grid">
+                <div class="about-content">
+                    <span class="sub-heading">Welcome to The Scholar's Manuscript</span>
+                    <h2 class="intro-title">Pioneering <span>Academic Integrity</span> & Global Excellence.</h2>
+                    <p>We are a premier academic consultancy dedicated to empowering U.G., P.G., and Doctoral candidates. By bridging the gap between raw research and high-impact publication, we ensure your work meets rigorous international standards.</p>
+                    <a href="#services" class="btn-solid" style="margin-top: 10px;">Explore Our Portfolio</a>
                 </div>
-            </a>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <i class="fas fa-globe-americas"></i>
+                        <h4>Global</h4>
+                        <p>Standards</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-user-graduate"></i>
+                        <h4>Elite</h4>
+                        <p>Mentorship</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>100%</h4>
+                        <p>Confidential</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-book-reader"></i>
+                        <h4>Ethical</h4>
+                        <p>Refining</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#services">Expertise</a></li>
-                <li><a href="#about">Profile</a></li>
-                <li><a href="#contact" class="btn-gold">Get Started</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    </section>
 
-<section class="hero">
-    <div class="hero-content container">
-        <h2 class="hero-title">Elevating Research to <br><span>Global Standards.</span></h2>
-        <p class="hero-desc">Bespoke Academic Support for U.G., P.G., and Doctoral Candidates.</p>
-    </div>
-</section>
-
-<section id="services" class="services-section">
-    <div class="container">
-        <h3 class="section-heading">Our Premium Portfolio</h3>
-        <div class="service-grid">
-
-            <div class="service-card">
-                <h4 class="service-title">Manuscript Drafting</h4>
+    <section id="services" class="services-section">
+        <div class="container">
+            <h3 class="section-heading">Our Premium Portfolio</h3>
+            <div class="service-grid">
+                <div class="service-card"><span class="badge">Faculty</span><i class="fas fa-book-open portfolio-icon"></i><h4 class="service-title">Manuscript Drafting</h4><p>Scopus & UGC-Care indexed paper writing with high impact focus.</p></div>
+                <div class="service-card highlight-card"><span class="badge">PhD/PG</span><i class="fas fa-scroll portfolio-icon"></i><h4 class="service-title">Thesis & Synopsis</h4><p>Expert proposals for Science, Commerce, and Humanities streams.</p></div>
+                <div class="service-card"><span class="badge">U.G. & P.G.</span><i class="fas fa-university portfolio-icon"></i><h4 class="service-title">Dissertation Hub</h4><p>Meticulous dissertation support for university-standard reports.</p></div>
+                <div class="service-card highlight-card"><span class="badge">Design</span><i class="fas fa-palette portfolio-icon"></i><h4 class="service-title">Scientific Posters</h4><p>High-end visual communication for international conferences.</p></div>
+                <div class="service-card"><span class="badge">Premium Print</span><i class="fas fa-print portfolio-icon"></i><h4 class="service-title">Glossy Printing</h4><p>Ultra-HD printing on premium 200GSM+ glossy paper.</p></div>
+                <div class="service-card"><span class="badge">Analysis</span><i class="fas fa-chart-line portfolio-icon"></i><h4 class="service-title">Statistical Analysis</h4><p>Advanced data modeling using SPSS, R, and Prism.</p></div>
+                <div class="service-card highlight-card"><span class="badge">Editorial</span><i class="fas fa-check-double portfolio-icon"></i><h4 class="service-title">Ethical Refining</h4><p>Turnitin-verified plagiarism reduction and proofreading.</p></div>
+                <div class="service-card"><span class="badge">Student Support</span><i class="fas fa-file-alt portfolio-icon"></i><h4 class="service-title">Project Reports</h4><p>Technical internship and industrial reports for all streams.</p></div>
             </div>
-
-            <div class="service-card">
-                <h4 class="service-title">Thesis & Synopsis</h4>
-            </div>
-
-            <div class="service-card">
-                <h4 class="service-title">Statistical Analysis</h4>
-            </div>
-
-            <div class="service-card">
-                <h4 class="service-title">Ethical Refining</h4>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="contact" class="contact-section">
-    <div class="container">
-        <h3>Contact</h3>
-    </div>
-</section>
+    <section id="about" class="legal-section">
+        <div class="container">
+            <div class="legal-grid">
+                <div class="legal-card">
+                    <h4><i class="fas fa-info-circle" style="color: var(--rich-brown);"></i> Corporate Mission</h4>
+                    <p>The Scholar's Manuscript is a prestigious academic consultancy. We are committed to fostering research integrity and excellence.</p>
+                </div>
+                <div class="legal-card">
+                    <h4><i class="fas fa-balance-scale" style="color: var(--rich-brown);"></i> Compliance & Privacy</h4>
+                    <p>All intellectual property remains strictly confidential. We adhere to international ethical standards (COPE).</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    <p style="text-align:center;padding:20px;">© 2026 The Scholar’s Manuscript</p>
-</footer>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-header">
+                    <h3>Direct <span>Academic Inquiry</span></h3>
+                    <p>Submit your credentials for a formal consultation.</p>
+                </div>
+                <form action="https://formspree.io/f/xyklkpjo" method="POST" class="professional-form">
+                    <div class="form-grid">
+                        <div class="form-column">
+                            <div class="input-group"><label>Full Name</label><input type="text" name="Full Name" placeholder="Dr. / Mr. / Ms." required></div>
+                            <div class="input-group"><label>Designation</label><input type="text" name="Designation" placeholder="Assistant Professor / Scholar" required></div>
+                            <div class="input-group"><label>Affiliation</label><input type="text" name="Affiliation" placeholder="University / College Name" required></div>
+                        </div>
+                        <div class="form-column">
+                            <div class="input-group"><label>WhatsApp Number</label><input type="tel" name="WhatsApp" placeholder="+91" required></div>
+                            <div class="input-group"><label>Official Email ID</label><input type="email" name="Email" placeholder="official@email.com" required></div>
+                            <div class="input-group">
+                                <label>Stream & Service</label>
+                                <div class="dual-select">
+                                    <select name="Stream" required><option value="">Stream</option><option>Science</option><option>Commerce</option><option>Humanities</option></select>
+                                    <select name="Service" required><option value="">Service</option><option>Thesis</option><option>Poster/Print</option><option>Analysis</option></select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group full-width">
+                        <label>Description</label>
+                        <textarea name="Requirement" rows="3" placeholder="Describe your requirement..."></textarea>
+                    </div>
+                    <div class="form-footer">
+                        <p><i class="fas fa-envelope" style="color: var(--rich-brown);"></i> <b>Direct:</b> <a href="mailto:scholarmanuscript@gmail.com" class="form-mail-link">scholarmanuscript@gmail.com</a></p>
+                        <button type="submit" class="submit-premium">Initialize Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <div class="container footer-box">
+            <div class="brand-section">
+                <a href="index.html" class="brand-section-new">
+                    <div class="new-logo-badge">
+                        <svg viewBox="0 0 100 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="47" fill="#0a192f" stroke="#d4af37" stroke-width="4"/>
+                            <path d="M50 22 L65 48 L56 53 L56 75 L44 75 L44 53 L35 48 Z" fill="#d4af37"/>
+                        </svg>
+                    </div>
+                    <div class="brand-text-block">
+                        <h1>THE SCHOLAR'S <br><span style="color: var(--gold);">MANUSCRIPT</span></h1>
+                        <p>Refining the Science of Writing</p>
+                    </div>
+                </a>
+            </div>
+            <div class="footer-contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:scholarmanuscript@gmail.com">scholarmanuscript@gmail.com</a></p>
+                <p><i class="fab fa-whatsapp"></i> +91 911******</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 An Initiative by ARCC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) { header.classList.add('header-scrolled'); }
+            else { header.classList.remove('header-scrolled'); }
+        });
+
+        // Service Worker Registration (App functionality)
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
 </body>
 </html>
